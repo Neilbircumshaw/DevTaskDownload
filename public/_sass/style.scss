@@ -1,0 +1,128 @@
+
+//============ SETTINGS =============
+
+$footer-height: 80px;
+
+$color-emp: #c00000;
+$color-dark: #720000;
+$color-light: white;
+
+
+
+//============ BASE STYLES =============
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  margin-bottom: $footer-height; /*for sticky footer*/
+  font-family: Myriad-Pro, sans-serif;
+
+  @media screen and (max-width: 600px){
+    margin-bottom: 0;
+  }
+}
+
+a {
+  color: $color-emp;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3 {
+  color: $color-emp;
+}
+
+
+//============ GLOBAL ELEMENTS =============
+
+.header-main {
+  background-color: $color-dark;
+  color: $color-light;
+  padding: 15px 15px 25px;
+
+  .logo {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.nav-main {
+  width: 100%;
+  font-weight: bold;
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+  }
+
+  a {
+    color: green;
+    text-decoration: none;
+  }
+
+}
+
+.nav-divider {
+  display: block;
+  margin: 0 auto;
+}
+
+.footer-main {
+  background-color: $color-dark;
+  width: 100%;
+  color: $color-light;
+  height: $footer-height;
+  position: absolute;
+  bottom: 0;
+  font-size: 13px;
+  padding-top: 33px;
+  text-align: center;
+
+  @media screen and (max-width: 600px){
+    position: relative;
+  }
+}
+
+
+//============ GENERAL =============
+.notice {
+  position: relative;
+  top: 0;
+  right: 0;
+  background-color: #fff5a3;
+  color: #eeac1d;
+  border-bottom: 1px solid #eeac1d;
+  padding: 10px;
+  //position: fixed;
+
+  .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 2px;
+  }
+}
+
+
+
+article {
+  border-bottom: 1px solid $color-emp;
+  padding: 10px 0;
+}
+
+#menu {
+  a {
+    color: green;
+  }
+}

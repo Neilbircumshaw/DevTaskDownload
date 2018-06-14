@@ -1,0 +1,209 @@
+/*============ BASE STYLES =============*/
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+
+}
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  margin-bottom: 80px; /*for sticky footer*/
+  font-family: Myriad-Pro, sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    margin-bottom: 0;
+  }
+}
+
+a {
+  color: #c00000;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3 {
+  color: #c00000;
+}
+
+/*============ GLOBAL ELEMENTS =============*/
+.header-main {
+  background-color: #720000;
+  color: white;
+  padding: 15px 15px 25px;
+}
+
+.header-main .logo {
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+.nav-main {
+  width: 100%;
+  font-weight: bold;
+}
+
+.nav-main ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+}
+
+.nav-main a {
+  color: green;
+  text-decoration: none;
+}
+
+.nav-divider {
+  display: block;
+  margin: 0 auto;
+}
+
+
+.footer-main {
+  background-color: #720000;
+  width: 100%;
+  color: white;
+  height: 80px;
+  position: absolute;
+  bottom: 0;
+  font-size: 13px;
+  padding-top: 33px;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .footer-main {
+    position: relative;
+  }
+}
+
+
+
+/*============ GENERAL =============*/
+
+.notice {
+  position: relative;
+  top: 0;
+  right: 0;
+  background-color: #fff5a3;
+  color: #eeac1d;
+  border-bottom: 1px solid #eeac1d;
+  padding: 10px;
+
+}
+
+.notice .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 2px;
+}
+
+.header-main {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-main{
+  display:flex;
+  justify-content: center;
+
+
+}
+
+#menu > li {
+ padding: 20px;
+ font-weight: bold;
+ font-size: 18px
+
+
+}
+
+.content-main{
+  margin:0px 120px 0px 120px
+
+}
+
+
+
+article {
+  border-bottom: 1px solid #c00000;
+  padding: 10px 0;
+}
+
+#menu a {
+  color: #c00000;
+}
+
+.gallery{
+ border: black 5px solid;
+flex-grow: 1;
+margin-right: 10px
+}
+
+
+
+
+span{
+  font-weight:bold;
+  color: #720000;
+  padding-right: 15px
+
+
+}
+
+.items{
+padding: 10px;
+border-bottom: #720000 1px solid
+
+}
+
+.galleryContainer{
+  display:flex;
+
+ margin-top: 50px;
+}
+
+@media only screen and (max-width: 1200px){
+.galleryContainer{
+  flex-wrap:wrap;
+}
+
+.gallery{flex-grow: 0;
+flex-basis:40%;
+margin:auto;
+margin-bottom: 10px}
+
+
+}
+
+
+
+ .greeting{
+   display:inline;
+ }
+
+ .current-time{
+   padding-right: 2px
+ }
+
+/*# sourceMappingURL=style.css.map */
