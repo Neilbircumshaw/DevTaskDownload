@@ -30,7 +30,7 @@ $('.current-time').text(currentTime);
     if(currentHour < 12 ){
     $('.greeting').text("- good morning!");
    }
-   else if (currentHour < 5) {$('.greeting').text("- good afternoon!");}
+   else if (currentHour > 12 && currentHour < 17) {$('.greeting').text("- good afternoon!");}
 
    else { $('.greeting').text("- good evening!");}
 });
@@ -69,7 +69,7 @@ function getNews(url) {
 // some simple conditioning to only return the objects and their data from the array if their published is = to 1
         if(info.published == 1){
 
- /*getting the date to show in a more readable format of dd-mm-yyyy instead of yyyy-mm-dd, 
+ /*getting the date to show in a more readable format of dd-mm-yyyy instead of yyyy-mm-dd,
 storing all the date info in a variable call dates, splitting each part of the date up reversing the items then joinging them back together*/
 
           let dates = info.date;
